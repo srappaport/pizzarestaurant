@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Here are the toppings you picked</p>
+<li><%= "Cheese: #{params[:cheese]}" %> </li>
+<li><%= "Sauce: #{params[:sauce]}" %> </li>
+<li><%= "Toppings: #{params[:topping].join(', ')}" %> </li>
+<p><%= "The total price is $#{@total}" %></p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    h2 {color=green;}
+    </style>
+</head>
+<body>
+  <img src="https://food-images.files.bbci.co.uk/food/recipes/alpine_pizza_32132_16x9.jpg" width="500">
+<form method="POST" action="/pricing">
+  <h2>Welcome to Sarah's BEST PIZZA EVER Restaurant</h2>
+  <p>You can create a custom pizza by choosing toppings below. Base price for pizza is $10.00. Hi Spencer <3</p>
+  <p>Choose your pizza topping by typing the name into the box!
+    <ul>
+      <li>Cheese options: mozzarella ($1.00), goat cheese ($1.50)</li>
+      <li>Sauce options: tomato ($0.50), pesto ($0.75) </li>
+      <li>Sauce options: olives($0.25), mushrooms ($0.30), caramelized onions ($0.40)</li>
+    </ul>
+  </p>
+  <h3>Pick your cheese:</h3>
+  <p>Cheese: <input type="text" name="cheese"></p>
+  <h3>Pick your sauce:</h3>
+  <p>Sauce: <input type="text" name="sauce"></p>
+  <h3>Pick your toppings:</h3>
+  <p>Olives?<input type="checkbox" name="topping[]" value ="olives"></p>
+  <p>Mushrooms?<input type="checkbox" name="topping[]" value ="mushrooms"></p>
+  <p>Caramelized Onions?<input type="checkbox" name="topping[]" value ="onions"></p>
+  <input type="submit">
+</form>
+</body>
+
+
+</html>

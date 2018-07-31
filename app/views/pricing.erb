@@ -8,5 +8,15 @@
 <li><%= "Toppings: #{params[:topping].join(', ')}" %> </li>
 <p><%= "The total price is $#{@total}" %></p>
 <p><%= "After tax, you'll pay #{@total*1.06.round(2)}."%>
+
+
+
+
+  <form method="POST" action="/final">
+    <h3>Are you happy?</h3>
+    <p>Yes<input type="checkbox" name="y_or_n" value ="yes"></p>
+    <p>No<input type="checkbox" name="y_or_n" value ="no"></p>
+    <input type="submit">
+  </form>
 </body>
 </html>

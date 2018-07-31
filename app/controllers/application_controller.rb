@@ -24,7 +24,28 @@ class ApplicationController < Sinatra::Base
     @total=cheese_price(@cheese, @total)
     @total=sauce_price(@sauce, @total)
     @total=topping_price(@toppings, @total)
-
     erb :pricing
   end
+
+  post '/final' do
+    @y_or_n=params[:y_or_n]
+    if @y_or_n == "yes"
+      erb :final
+    elsif @y_or_n == "no"
+      erb :order_pizza
+    end
+  end
+
+  #post '/final' do
+
+  #  puts @response
+    #if @response == "yes"
+    #  "Hello World"
+    #elsif @response == "no"
+  #    "Goodnight World"
+  #  end
+  #end
+
+
+
 end

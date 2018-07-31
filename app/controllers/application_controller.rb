@@ -16,7 +16,6 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/pricing' do
-    #puts params[:cheese]
     puts params
     @cheese = params[:cheese]
     @sauce = params[:sauce]

@@ -7,5 +7,6 @@
 <li><%= "Sauce: #{params[:sauce]}" %> </li>
 <li><%= "Toppings: #{params[:topping].join(', ')}" %> </li>
 <p><%= "The total price is $#{@total}" %></p>
+<p><%= "After tax, you'll pay #{@total*1.06.round(2)}."%>
 </body>
 </html>
